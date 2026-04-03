@@ -1,0 +1,49 @@
+<civs>
+	<civ mergeMode="add">
+		<name>OmniGreek</name>
+		<statsid>SP</statsid>
+		<key>G</key>
+		<culture>Greek</culture>
+		<displaynameid>STR_CIV_MENTALTRIP</displaynameid>
+		<rollovernameid>STR_CIV_MENTALTRIP_LR</rollovernameid>
+		<titleid>STR_CIV_MENTALTRIP_T</titleid>
+		<agetech age="ArchaicAge">
+			<tech>ArchaicAgeOmniGreek</tech>
+		</agetech>
+		<deathmatchtech>DeathMatchGreek</deathmatchtech>
+		<buildingefficiency>0.6</buildingefficiency>
+		<extrabuildingefficiency>0.3</extrabuildingefficiency>
+		<startingunits>
+			<unit count="4" delay="2.00" x="0.00" y="0.00" z="-5.00">VillagerGreek</unit>
+			<unit count="1" delay="4.00" x="6.00" y="0.00" z="0.00">Kataskopos</unit>
+		</startingunits>
+		<startingunits mode="deathmatch">
+			<unit count="9" delay="2.00" x="0.00" y="0.00" z="0.00">VillagerGreek</unit>
+			<unit count="1" delay="4.00" x="-12.00" y="0.00" z="0.00">Kataskopos</unit>
+		</startingunits>
+		<startingqueue>
+			<unit autotrain="true">VillagerGreek</unit>
+		</startingqueue>
+		<startingqueue mode="deathmatch">
+			<unit autotrain="true">VillagerGreek</unit>
+			<unit prequeue="true">Jason</unit>
+		</startingqueue>
+		<startingresources>
+			<food>200</food>
+			<wood>250</wood>
+			<gold>50</gold>
+			<favor>10</favor>
+		</startingresources>
+		<startingresources mode="deathmatch">
+			<food>18000</food>
+			<wood>18000</wood>
+			<gold>18000</gold>
+			<favor>110</favor>
+		</startingresources>
+		<icon>resources\godpicker\icon.png</icon>
+		<portrait>resources\godpicker\portrait.png</portrait>
+		<breakoutportrait>resources\godpicker\breakout.png</breakoutportrait>
+		<minimapborderimage>ui\ingame\minimap\grk_min_panel</minimapborderimage>
+		<backgroundscenario>backgrounds\\background_greek.mythscn</backgroundscenario>
+	</civ>
+</civs>

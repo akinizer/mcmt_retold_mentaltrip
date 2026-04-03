@@ -1,0 +1,730 @@
+
+  <techtreemods>
+    <!-- NEW GREEK PANTHEON -->
+    <tech name="ArchaicAgeOmniGreek">
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<flag>AgeTech</flag>
+		<effects>
+
+      <!-- God Power -->
+			<effect type="Data" subtype="GodPower" power="CommunalHearth" amount="1.0" cooldown="10.0" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+			
+      <!-- Archaic Age -->
+      <effect type="TechStatus" status="active">ArchaicAgeWeakenUnits</effect>
+			<effect type="TechStatus" status="active">ArchaicAgeGreek</effect>
+
+      <!-- Minor Gods -->
+      <effect type="TechStatus" status="obtainable">ClassicalAgeAthena</effect>
+			<effect type="TechStatus" status="obtainable">ClassicalAgeAres</effect>
+			<effect type="TechStatus" status="obtainable">ClassicalAgeOmniGreek</effect>
+      
+      <!-- Hero -->
+      <effect type="TechStatus" status="obtainable">Pharaoh</effect>
+
+      <!-- Techs -->
+			<effect type="TechStatus" status="obtainable">OlympianParentage</effect>
+      <effect type="TechStatus" status="obtainable">RavenRespawn</effect>
+      <effect type="TechStatus" status="obtainable">RavenFirstSpawn</effect>
+      <effect type="TechStatus" status="obtainable">PriestEnableReal</effect>
+			<effect type="TechStatus" status="obtainable">PharaohFirstSpawn</effect>
+			<effect type="TechStatus" status="obtainable">HandsOfThePharaoh</effect>
+      <effect type="TechStatus" status="obtainable">SkinOfTheRhino</effect>
+      <effect type="TechStatus" status="obtainable">FloodOfTheNile</effect>
+      <effect type="TechStatus" status="obtainable">VaultsOfErebus</effect>
+      <effect type="TechStatus" status="obtainable">Hamask</effect>
+      <effect type="TechStatus" status="obtainable">HammerOfThunder</effect>
+      <effect type="TechStatus" status="obtainable">DwarvenWeapons</effect>
+			<effect type="TechStatus" status="obtainable">MeteoricIronArmor</effect>
+			<effect type="TechStatus" status="obtainable">DragonscaleShields</effect>
+      <effect type="TechStatus" status="obtainable">TemporalChaos</effect>
+      <effect type="TechStatus" status="obtainable">EmpyreanSpeed</effect>
+      <effect type="TechStatus" status="obtainable">Channels</effect>
+      <effect type="TechStatus" status="obtainable">Plow</effect>
+			<effect type="TechStatus" status="obtainable">HuntingEquipment</effect>
+      <effect type="TechStatus" status="obtainable">DivineBooks</effect>
+			<effect type="TechStatus" status="obtainable">Reincarnation</effect>
+			<effect type="TechStatus" status="obtainable">QiLinsBlessing</effect>
+      <effect type="TechStatus" status="obtainable">MasterOfWeaponry</effect>
+			<effect type="TechStatus" status="obtainable">SonOfLoong</effect>
+			<effect type="TechStatus" status="obtainable">RageOfSlaughter</effect>
+			<effect type="TechStatus" status="obtainable">SpoilsOfWar</effect>
+      <effect type="TechStatus" status="obtainable">AdvancedDefenses</effect>
+			<effect type="TechStatus" status="obtainable">Abundance</effect>
+			<effect type="TechStatus" status="obtainable">SinisterDefiance</effect>
+			<effect type="TechStatus" status="obtainable">ChasingTheSun</effect>
+			<effect type="TechStatus" status="obtainable">Kumiki</effect>
+      <effect type="TechStatus" status="obtainable">FreyrsGift</effect>
+      <effect type="TechStatus" status="obtainable">CelestialWeapons</effect>
+			<effect type="TechStatus" status="obtainable">TaiChi</effect>
+      <effect type="TechStatus" status="obtainable">PeachOfImmortality</effect>
+			<effect type="TechStatus" status="obtainable">HerbalMedicine</effect>
+      <effect type="TechStatus" status="obtainable">Kagura</effect>
+      <effect type="TechStatus" status="obtainable">Tenshu</effect>
+      <effect type="TechStatus" status="obtainable">CrushingWaves</effect>
+
+      <!-- Greek -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Militia</target>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Hippocampus</target>
+			</effect>
+			<effect type="Data" action="HandAttack" amount="0.60" subtype="Damagebonus" unittype="Building" relativity="Absolute">
+				<target type="ProtoUnit">AbstractInfantry</target>
+			</effect>
+			<effect type="Data" amount="1.15" subtype="MaximumVelocity" relativity="BasePercent">
+				<target type="ProtoUnit">Hoplite</target>
+			</effect>
+			<effect type="Data" action="Gather" amount="1.20" subtype="WorkRate" unittype="AbstractTemple" relativity="BasePercent">
+				<target type="ProtoUnit">EconomicUpgraded</target>
+			</effect>
+			<effect type="Data" amount="-1.00" subtype="PopulationCount" relativity="Absolute">
+				<target type="ProtoUnit">MythUnit</target>
+			</effect>
+
+      <effect type="CreateUnit" unit="Goat" generator="TownCenter" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Egyptian -->
+      <effect type="Data" action="Convert" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+				<target type="ProtoUnit">Priest</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">BaboonOfSet</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="BaboonOfSet" row="1" column="1" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="GazelleOfSet" row="1" column="2" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="GiraffeOfSet" row="1" column="3" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="HippopotamusOfSet" row="1" column="4" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="HyenaOfSet" row="2" column="1" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="CrocodileOfSet" row="2" column="2" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="RhinocerosOfSet" row="2" column="3" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="CommandAdd" proto="ElephantOfSet" row="2" column="4" relativity="Assign">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Mercenary</target>
+			</effect>
+      
+      <!-- Norse -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">OxCart</target>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">DwarvenArmory</target>
+			</effect>
+      <effect type="Data" amount="0.00" subtype="AddDependentUnit" proto="OdinsRavens" x="0.00" y="0.00" z="0.00" relativity="BasePercent">
+				<target type="ProtoUnit">Wonder</target>
+			</effect>
+      <effect type="SetOnTechResearchedTech" amount="1.00" techtype="ArmoryTechnology">ThorDwarfSpawn</effect>
+
+      <!-- Atlantean -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Manor</target>
+			</effect>
+      <effect type="Data" action="TemporalScaffoldingSmall" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+				<target type="ProtoUnit">Manor</target>
+			</effect>
+			<effect type="Data" action="TemporalScaffoldingLarge" amount="1.00" subtype="ActionEnable" relativity="Absolute">
+				<target type="ProtoUnit">Manor</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="ProtoUnitFlag" flag="DisplayRange" relativity="Absolute">
+				<target type="ProtoUnit">Manor</target>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">SkyPassage</target>
+			</effect>
+
+    <!-- Chinese -->
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeMythUnitNotTitan" effecttype="InRange" modifytype="HealRate" amount="1.5" relativity="Absolute">
+          <target type="Player"></target>
+      </effect>
+
+			<effect type="Data" subtype="BuildingChainEffect" unittype="Building" effecttype="Connected" modifytype="ResearchRate" amount="4.000" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+			<effect type="Data" subtype="BuildingChainEffect" unittype="EmplacementBuilding" effecttype="Connected" modifytype="CommandResearchCost" amount="0.75" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeAffectedByBuildingChainAutoBuild" effecttype="InRange" modifytype="AutoBuildRate" amount="-0.5" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <effect type="CreatePower" protopower="YinAndYang"></effect>
+      <effect type="CreatePower" protopower="BushidoSusanoo"></effect>
+      <effect type="CreatePower" protopower="BushidoTsukuyomi"></effect>
+
+      <effect type="Data" amount="1.00" subtype="Active" relativity="Absolute">
+          <target type="ProtoUnit">FarmShennong</target>
+        </effect>
+
+      <effect type="CreateUnit" unit="ChiYouSPC" generator="TownCenter" allgenerators="true">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+      </effect>
+      <effect type="CreateUnit" unit="QiongQi" generator="Temple">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+            <offset x="-5.00" y="0.00" z="0.00"></offset>
+          </pattern>
+      </effect>
+
+      <!-- Japanese -->
+      <effect type="CreateUnit" unit="Kitsune" generator="Temple">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset>
+          </pattern>
+      </effect>
+      <effect type="CreateUnit" unit="Jorogumo" generator="AbstractTemple">
+          <pattern type="Leaving" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+            <offset x="0.00" y="0.00" z="0.00"></offset>
+          </pattern>
+      </effect>
+    </effects>
+	</tech>
+  <tech name="ClassicalAgeOmniGreek">
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<flag>Volatile</flag>
+		<flag>AgeTech</flag>
+		<prereqs>
+			<specificage>ClassicalAge</specificage>
+		</prereqs>
+		<effects>
+
+      <!-- God Power -->
+      <effect type="Data" subtype="GodPower" power="HealingSpring" amount="5.0" cooldown="20.0" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <!-- Classical Age -->
+			<effect type="TechStatus" status="active">ClassicalAgeGeneral</effect>
+			<effect type="TechStatus" status="active">ClassicalAgeGreek</effect>
+
+      <!-- Hero -->
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Odysseus</target>
+			</effect>
+
+      <!-- Minor Gods -->
+			<effect type="TechStatus" status="obtainable">HeroicAgeDionysus</effect>
+			<effect type="TechStatus" status="obtainable">HeroicAgeApollo</effect>
+			<effect type="TechStatus" status="obtainable">HeroicAgeOmniGreek</effect>
+
+      <!-- Techs -->
+      <effect type="TechStatus" status="obtainable">SylvanLore</effect>
+			<effect type="TechStatus" status="obtainable">WingedMessenger</effect>
+			<effect type="TechStatus" status="obtainable">SpiritedCharge</effect>
+      <effect type="TechStatus" status="obtainable">ThornedWalls</effect>
+			<effect type="TechStatus" status="obtainable">PansPioneers</effect>
+			<effect type="TechStatus" status="obtainable">PredatoryInstinct</effect>
+      <effect type="TechStatus" status="obtainable">ChthonicRites</effect>
+			<effect type="TechStatus" status="obtainable">Dionysia</effect>
+			<effect type="TechStatus" status="obtainable">ThracianHorses</effect>
+      <effect type="TechStatus" status="obtainable">FeetOfTheJackal</effect>
+			<effect type="TechStatus" status="obtainable">Necropolis</effect>
+			<effect type="TechStatus" status="obtainable">SerpentSpear</effect>
+      <effect type="TechStatus" status="obtainable">Shaduf</effect>
+			<effect type="TechStatus" status="obtainable">ScallopedAxe</effect>
+			<effect type="TechStatus" status="obtainable">LeatherFrameShield</effect>
+			<effect type="TechStatus" status="obtainable">ElectrumBullets</effect>
+      <effect type="TechStatus" status="obtainable">Disablot</effect>
+			<effect type="TechStatus" status="obtainable">ThunderingHooves</effect>
+			<effect type="TechStatus" status="obtainable">Sessrumnir</effect>
+      <effect type="TechStatus" status="obtainable">HallOfThanes</effect>
+			<effect type="TechStatus" status="obtainable">DwarvenBreastplate</effect>
+			<effect type="TechStatus" status="obtainable">CaveTroll</effect>
+      <effect type="TechStatus" status="obtainable">Gjallarhorn</effect>
+			<effect type="TechStatus" status="obtainable">Safeguard</effect>
+			<effect type="TechStatus" status="obtainable">Rigsthula</effect>
+      <effect type="TechStatus" status="obtainable">Valgaldr</effect>
+			<effect type="TechStatus" status="obtainable">ServantsOfGlory</effect>
+			<effect type="TechStatus" status="obtainable">RingOath</effect>
+			<effect type="TechStatus" status="obtainable">Ydalir</effect>
+      <effect type="TechStatus" status="obtainable">AlluvialClay</effect>
+			<effect type="TechStatus" status="obtainable">HeartOfTheTitans</effect>
+			<effect type="TechStatus" status="obtainable">TheftOfFire</effect>
+      <effect type="TechStatus" status="obtainable">BiteOfTheShark</effect>
+			<effect type="TechStatus" status="obtainable">WeightlessMace</effect>
+			<effect type="TechStatus" status="obtainable">FrontlineHeroics</effect>
+      <effect type="TechStatus" status="obtainable">HephaestusRevenge</effect>
+			<effect type="TechStatus" status="obtainable">VolcanicForge</effect>
+			<effect type="TechStatus" status="obtainable">Perception</effect>
+      <effect type="TechStatus" status="obtainable">MountainousMight</effect>
+			<effect type="TechStatus" status="obtainable">KuafuChieftain</effect>
+      <effect type="TechStatus" status="obtainable">CondemnedSoul</effect>
+			<effect type="TechStatus" status="obtainable">SaltwaterSpring</effect>
+			<effect type="TechStatus" status="obtainable">HuntersStrength</effect>
+			<effect type="TechStatus" status="obtainable">Kumiki</effect>
+      <effect type="TechStatus" status="obtainable">WindSickles</effect>
+			<effect type="TechStatus" status="obtainable">Katagi</effect>
+			<effect type="TechStatus" status="obtainable">GoheiWands</effect>
+      <effect type="TechStatus" status="obtainable">DeadlySnare</effect>
+			<effect type="TechStatus" status="obtainable">WisdomOfNine</effect>
+			<effect type="TechStatus" status="obtainable">SashimonoBannermen</effect>
+			<effect type="TechStatus" status="obtainable">IvoryNetsuke</effect>
+      <!-- Greek -->
+      <effect type="CreateUnit" unit="Goat" generator="TownCenter" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">LykaonVillager</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">LykaonWolf</target>
+			</effect>
+			<effect type="CreateUnit" unit="LykaonVillager" generator="AbstractTemple">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Egyptian -->
+      <effect type="Data" action="RangedAttack" amount="9.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" action="RangedAttackMyth" amount="9.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">Pharaoh</target>
+			</effect>
+			<effect type="Data" action="RangedAttack" amount="7.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">Priest</target>
+			</effect>
+			<effect type="Data" action="RangedAttackMyth" amount="7.00" subtype="MaximumRange" relativity="Absolute">
+				<target type="ProtoUnit">Priest</target>
+			</effect>
+      <effect type="CreateUnit" unit="Anubite" generator="AbstractTemple">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Norse -->
+      <effect type="CreateUnit" unit="Einheri" generator="AbstractTemple">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Atlantean -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Promethean</target>
+			</effect>
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Automaton</target>
+			</effect>
+
+      <effect type="CreateUnit" unit="Servant" generator="Dock">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Chinese -->
+      <effect type="CreatePower" protopower="ShieldBlessing"></effect>
+        <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeMythUnitNotTitan" effecttype="InRange" modifytype="HealRate" amount="1.5" relativity="Absolute">
+          <target type="Player"></target>
+      </effect>
+
+			<effect type="Data" subtype="BuildingChainEffect" unittype="Building" effecttype="Connected" modifytype="ResearchRate" amount="4.000" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+			<effect type="Data" subtype="BuildingChainEffect" unittype="EmplacementBuilding" effecttype="Connected" modifytype="CommandResearchCost" amount="0.75" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeAffectedByBuildingChainAutoBuild" effecttype="InRange" modifytype="AutoBuildRate" amount="-0.5" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <effect type="CreateUnit" unit="Pioneer" generator="AbstractTownCenter">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+		</effects>
+	</tech>
+
+  <tech name="HeroicAgeOmniGreek">
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<flag>Volatile</flag>
+		<flag>AgeTech</flag>
+		<prereqs>
+			<specificage>HeroicAge</specificage>
+		</prereqs>
+		<effects>
+
+      <!-- God Power -->
+      <effect type="Data" subtype="GodPower" power="ShiftingSands" amount="1.0" cooldown="90.0" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <!-- Heroic Age -->
+			<effect type="TechStatus" status="active">HeroicAgeGeneral</effect>
+			<effect type="TechStatus" status="active">HeroicAgeGreek</effect>
+
+      <!-- Hero -->
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Icarus</target>
+			</effect>
+      
+      <!-- Minor Gods -->
+			<effect type="TechStatus" status="obtainable">MythicAgeHephaestus</effect>
+			<effect type="TechStatus" status="obtainable">MythicAgeArtemis</effect>
+			<effect type="TechStatus" status="obtainable">MythicAgeOmniGreek</effect>
+
+      <!-- Techs -->
+      <effect type="TechStatus" status="obtainable">ChthonicRites</effect>
+			<effect type="TechStatus" status="obtainable">Dionysia</effect>
+			<effect type="TechStatus" status="obtainable">ThracianHorses</effect>
+      <effect type="TechStatus" status="obtainable">Anastrophe</effect>
+			<effect type="TechStatus" status="obtainable">Oracle</effect>
+			<effect type="TechStatus" status="obtainable">TempleOfHealing</effect>
+			<effect type="TechStatus" status="obtainable">SunRay</effect>
+      <effect type="TechStatus" status="obtainable">Argonauts</effect>
+			<effect type="TechStatus" status="obtainable">DivineBlood</effect>
+			<effect type="TechStatus" status="obtainable">GoldenApples</effect>
+			<effect type="TechStatus" status="obtainable">RoarOfOrthus</effect>
+      <effect type="TechStatus" status="obtainable">FatedArrows</effect>
+			<effect type="TechStatus" status="obtainable">GraciousHospitality</effect>
+			<effect type="TechStatus" status="obtainable">HallowedWoodlands</effect>
+      <effect type="TechStatus" status="obtainable">CrimsonLinen</effect>
+			<effect type="TechStatus" status="obtainable">ForceOfTheWestWind</effect>
+			<effect type="TechStatus" status="obtainable">BoneBow</effect>
+			<effect type="TechStatus" status="obtainable">SlingsOfTheSun</effect>
+      <effect type="TechStatus" status="obtainable">SolarBarque</effect>
+			<effect type="TechStatus" status="obtainable">SunDriedMudBrick</effect>
+			<effect type="TechStatus" status="obtainable">Crocodilopolis</effect>
+			<effect type="TechStatus" status="obtainable">DarkWater</effect>
+      <effect type="TechStatus" status="obtainable">FuneralBarge</effect>
+			<effect type="TechStatus" status="obtainable">SpiritOfMaat</effect>
+			<effect type="TechStatus" status="obtainable">FuneralRites</effect>
+			<effect type="TechStatus" status="obtainable">Nebty</effect>
+      <effect type="TechStatus" status="obtainable">LongSerpent</effect>
+			<effect type="TechStatus" status="obtainable">CallOfValhalla</effect>
+			<effect type="TechStatus" status="obtainable">ThurisazRune</effect>
+			<effect type="TechStatus" status="obtainable">SwineArray</effect>
+      <effect type="TechStatus" status="obtainable">WrathOfTheDeep</effect>
+			<effect type="TechStatus" status="obtainable">RingGiver</effect>
+			<effect type="TechStatus" status="obtainable">Vikings</effect>
+			<effect type="TechStatus" status="obtainable">Jotuns</effect>
+      <effect type="TechStatus" status="obtainable">GraniteMaw</effect>
+			<effect type="TechStatus" status="obtainable">FeastsOfRenown</effect>
+			<effect type="TechStatus" status="obtainable">NineWaves</effect>
+			<effect type="TechStatus" status="obtainable">GraspOfRan</effect>
+      <effect type="TechStatus" status="obtainable">PioneerOfTheSkies</effect>
+			<effect type="TechStatus" status="obtainable">Gemini</effect>
+			<effect type="TechStatus" status="obtainable">HeroicRenewal</effect>
+			<effect type="TechStatus" status="obtainable">SonsOfTheSun</effect>
+      <effect type="TechStatus" status="obtainable">DaughtersOfTheSea</effect>
+			<effect type="TechStatus" status="obtainable">PropheticSight</effect>
+			<effect type="TechStatus" status="obtainable">PoseidonsSecret</effect>
+			<effect type="TechStatus" status="obtainable">LanceOfStone</effect>
+      <effect type="TechStatus" status="obtainable">Daktyloi</effect>
+			<effect type="TechStatus" status="obtainable">HornsOfConsecration</effect>
+			<effect type="TechStatus" status="obtainable">OrichalcumMail</effect>
+			<effect type="TechStatus" status="obtainable">RheiasGift</effect>
+      <effect type="TechStatus" status="obtainable">HoovesOfTheWind</effect>
+			<effect type="TechStatus" status="obtainable">Maelstrom</effect>
+			<effect type="TechStatus" status="obtainable">VibrantLand</effect>
+			<effect type="TechStatus" status="obtainable">FrenziedDash</effect>
+      <effect type="TechStatus" status="obtainable">RockSolid</effect>
+			<effect type="TechStatus" status="obtainable">ScorchingFeathers</effect>
+			<effect type="TechStatus" status="obtainable">DroughtShips</effect>
+			<effect type="TechStatus" status="obtainable">BottomlessStomach</effect>
+      	<effect type="TechStatus" status="obtainable">AsceticPractices</effect>
+			<effect type="TechStatus" status="obtainable">GoldenKite</effect>
+			<effect type="TechStatus" status="obtainable">EightBanners</effect>
+			<effect type="TechStatus" status="obtainable">DanNoUraTactics</effect>
+      <effect type="TechStatus" status="obtainable">ThunderousPresence</effect>
+			<effect type="TechStatus" status="obtainable">DenDenDrums</effect>
+			<effect type="TechStatus" status="obtainable">HannyaMask</effect>
+			<effect type="TechStatus" status="obtainable">HeavenlyBarrage</effect>
+      	<effect type="TechStatus" status="obtainable">DeadlyRage</effect>
+			<effect type="TechStatus" status="obtainable">OniMask</effect>
+			<effect type="TechStatus" status="obtainable">GalesFury</effect>
+      <!-- Greek -->
+      <effect type="CreateUnit" unit="Goat" generator="TownCenter" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Egyptian -->  
+      <effect type="CreateUnit" unit="Roc" generator="Armory" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="Petsuchos" generator="House" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Norse -->
+      <effect type="CreateUnit" unit="FireGiant" generator="Armory" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="RockGiant" generator="Armory" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Atlantean -->
+       <effect type="Data" amount="10.00" subtype="BuildLimit" relativity="Absolute">
+				<target type="ProtoUnit">SkyPassage</target>
+			</effect> 
+      <effect type="CreateUnit" unit="StymphalianBird" generator="Armory" allgenerators="true">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Chinese -->
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeMythUnitNotTitan" effecttype="InRange" modifytype="HealRate" amount="1.5" relativity="Absolute">
+          <target type="Player"></target>
+      </effect>
+
+			<effect type="Data" subtype="BuildingChainEffect" unittype="Building" effecttype="Connected" modifytype="ResearchRate" amount="4.000" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+			<effect type="Data" subtype="BuildingChainEffect" unittype="EmplacementBuilding" effecttype="Connected" modifytype="CommandResearchCost" amount="0.75" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeAffectedByBuildingChainAutoBuild" effecttype="InRange" modifytype="AutoBuildRate" amount="-0.5" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+      <!-- Japanese -->
+       <effect type="CreateUnit" unit="Honengyo" generator="Dock">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+       <effect type="CreateUnit" unit="TEngu" generator="AbstractFortress">
+				<pattern type="Leaving" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="-5.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      
+		</effects>
+	</tech>
+	<tech name="MythicAgeOmniGreek">
+		<status>UNOBTAINABLE</status>
+		<flag>HideAllNotifications</flag>
+		<flag>Volatile</flag>
+		<flag>AgeTech</flag>
+		<prereqs>
+			<specificage>MythicAge</specificage>
+		</prereqs>
+		<effects>
+
+      <!-- God Power -->
+      <effect type="Data" subtype="GodPower" power="Sentinel" amount="1.0" cooldown="90.0" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <!-- Mythic Age -->
+			<effect type="TechStatus" status="active">MythicAgeGeneral</effect>
+			<effect type="TechStatus" status="active">MythicAgeGreek</effect>
+
+      <!-- Hero -->
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Polyphemus</target>
+			</effect>
+
+      <!-- Tech -->
+      <effect type="TechStatus" status="obtainable">NepheleanHarpy</effect>
+      <effect type="TechStatus" status="obtainable">FaceOfTheGorgon</effect>
+			<effect type="TechStatus" status="obtainable">MonstrousRage</effect>
+			<effect type="TechStatus" status="obtainable">ArgivePatronageZeus</effect>
+      	<effect type="TechStatus" status="obtainable">SacredLand</effect>
+			<effect type="TechStatus" status="obtainable">PiousSacrifice</effect>
+			<effect type="TechStatus" status="obtainable">EnchantedHymn</effect>
+      	<effect type="TechStatus" status="obtainable">NewKingdom</effect>
+			<effect type="TechStatus" status="obtainable">AtefCrown</effect>
+			<effect type="TechStatus" status="obtainable">DesertWind</effect>
+      <effect type="TechStatus" status="obtainable">AxeOfVengeance</effect>
+			<effect type="TechStatus" status="obtainable">GreatestOfFifty</effect>
+			<effect type="TechStatus" status="obtainable">SpearOfHorus</effect>
+      	<effect type="TechStatus" status="obtainable">BookOfThoth</effect>
+			<effect type="TechStatus" status="obtainable">TusksOfApedemak</effect>
+			<effect type="TechStatus" status="obtainable">ValleyOfTheKings</effect>
+      	<effect type="TechStatus" status="obtainable">GraniteMaw</effect>
+			<effect type="TechStatus" status="obtainable">FeastsOfRenown</effect>
+			<effect type="TechStatus" status="obtainable">NineWaves</effect>
+			<effect type="TechStatus" status="obtainable">GraspOfRan</effect>
+      <effect type="TechStatus" status="obtainable">Rampage</effect>
+			<effect type="TechStatus" status="obtainable">GraniteBlood</effect>
+      	<effect type="TechStatus" status="obtainable">SonsOfSleipnir</effect>
+			<effect type="TechStatus" status="obtainable">DwarvenAuger</effect>
+      <effect type="TechStatus" status="obtainable">Berserkergang</effect>
+			<effect type="TechStatus" status="obtainable">Bravery</effect>
+      <effect type="TechStatus" status="obtainable">TwilightOfTheGods</effect>
+			<effect type="TechStatus" status="obtainable">AvengingSpirit</effect>
+			<effect type="TechStatus" status="obtainable">SilentResolve</effect>
+			<effect type="TechStatus" status="obtainable">FuryOfTheFallen</effect>
+      <effect type="TechStatus" status="obtainable">AsperBlood</effect>
+			<effect type="TechStatus" status="obtainable">MythicRejuvenation</effect>
+			<effect type="TechStatus" status="obtainable">Celerity</effect>
+      <effect type="TechStatus" status="obtainable">HaloOfTheSun</effect>
+			<effect type="TechStatus" status="obtainable">Petrification</effect>
+			<effect type="TechStatus" status="obtainable">Titanomachy</effect>
+      	<effect type="TechStatus" status="obtainable">GuardianOfIo</effect>
+			<effect type="TechStatus" status="obtainable">DevoteesOfAtlas</effect>
+			<effect type="TechStatus" status="obtainable">TitanShield</effect>
+      <effect type="TechStatus" status="obtainable">ShakerOfHeaven</effect>
+			<effect type="TechStatus" status="obtainable">TempestuousStorm</effect>
+			<effect type="TechStatus" status="obtainable">LastStand</effect>
+			<effect type="TechStatus" status="obtainable">RisingTide</effect>
+      	<effect type="TechStatus" status="obtainable">XuanyuansBloodline</effect>
+			<effect type="TechStatus" status="obtainable">LeizusSilk</effect>
+			<effect type="TechStatus" status="obtainable">ImperialOrder</effect>
+			<effect type="TechStatus" status="obtainable">PowerOfChaos</effect>
+      <effect type="TechStatus" status="obtainable">FlamingBlood</effect>
+			<effect type="TechStatus" status="obtainable">SlashAndBurn</effect>
+			<effect type="TechStatus" status="obtainable">SongOfMidsummer</effect>
+			<effect type="TechStatus" status="obtainable">SouthernFire</effect>
+      	<effect type="TechStatus" status="obtainable">BurningMalevolence</effect>
+			<effect type="TechStatus" status="obtainable">SumoTraining</effect>
+			<effect type="TechStatus" status="obtainable">TenFistSword</effect>
+			<effect type="TechStatus" status="obtainable">Sojutsu</effect>
+      <effect type="TechStatus" status="obtainable">EternalHaunting</effect>
+			<effect type="TechStatus" status="obtainable">SeasideInfiltrators</effect>
+			<effect type="TechStatus" status="obtainable">Onmyodo</effect>
+			<effect type="TechStatus" status="obtainable">AsymmetricalBows</effect>
+      	<effect type="TechStatus" status="obtainable">RestlessArmy</effect>
+			<effect type="TechStatus" status="obtainable">DivinePrefecture</effect>
+			<effect type="TechStatus" status="obtainable">MechanicalArtisans</effect>
+      <!-- Greek -->
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Polyphemus</target>
+			</effect>
+			<effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">Myrmidon</target>
+			</effect>  
+      
+      <effect type="CreateUnit" unit="AmazonArcher" generator="AbstractFortress">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="MercenaryCavalry" generator="AbstractFortress">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="5.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="Midas" generator="AbstractFortress">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="HarpyMyth" generator="AbstractFortress">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="Colossus" generator="Armory">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="Siren" generator="Dock">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <!-- Egyptian -->
+      <effect type="CreateUnit" unit="SonOfOsiris" generator="TownCenter">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Norse -->
+        <effect type="CreateUnit" unit="GullinBurstiMythicAge" generator="Armory">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+        <effect type="CreateUnit" unit="HeroOfRagnarokDwarf" generator="Armory">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Atlantean -->
+      <effect type="CreateUnit" unit="Oracle" generator="AbstractTemple">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="3.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+
+      <effect type="Data" amount="1.00" subtype="Enable" relativity="Absolute">
+				<target type="ProtoUnit">MirrorTower</target>
+			</effect>
+      
+      <!-- Chinese -->
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeMythUnitNotTitan" effecttype="InRange" modifytype="HealRate" amount="1.5" relativity="Absolute">
+          <target type="Player"></target>
+      </effect>
+
+			<effect type="Data" subtype="BuildingChainEffect" unittype="Building" effecttype="Connected" modifytype="ResearchRate" amount="4.000" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+			<effect type="Data" subtype="BuildingChainEffect" unittype="EmplacementBuilding" effecttype="Connected" modifytype="CommandResearchCost" amount="0.75" relativity="Percent">
+				<target type="Player"></target>
+			</effect>
+      <effect type="Data" subtype="BuildingChainEffect" unittype="LogicalTypeAffectedByBuildingChainAutoBuild" effecttype="InRange" modifytype="AutoBuildRate" amount="-0.5" relativity="Absolute">
+				<target type="Player"></target>
+			</effect>
+
+      <effect type="CreateUnit" unit="XuanWu" generator="Armory">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="NeZha" generator="TownCenter">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="LiJing" generator="TownCenter">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="WenZhong" generator="TownCenter">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="1.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <effect type="CreateUnit" unit="ZhuQue" generator="Dock">
+				<pattern type="Scatter" speed="0.00" radius="0.00" quantity="2.00" minradius="0.00">
+					<offset x="0.00" y="0.00" z="0.00"></offset>
+				</pattern>
+			</effect>
+      <!-- Japanese -->
+		</effects>
+	</tech>
+</techtreemods>

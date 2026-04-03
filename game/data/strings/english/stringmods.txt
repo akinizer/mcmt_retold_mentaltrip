@@ -1,0 +1,4 @@
+// GODPICKER
+ID = "STR_CIV_MENTALTRIP" ;   Str = "Party God"
+ID = "STR_CIV_MENTALTRIP_T" ;   Str = "King of Parties"
+ID = "STR_CIV_MENTALTRIP_LR" ;   Str = "Focus: All Civilizations are Allowed to Join Greek Parties"
